@@ -1,0 +1,293 @@
+@font-face{
+    font-family: MyFont;
+    src: url('../fonts/16825.ttf');
+
+}
+
+html, body {
+    height: 100%;
+    font-family: MyFont;
+    box-sizing: border-box;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.root-element{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #008000;
+}
+
+.wrapper-button{
+    width: 37em;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    position: absolute;
+    top: 0;
+}
+
+.bthReg{
+    font-family: MyFont;
+    font-size: 5em;
+    width: 26rem;
+    border-radius: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+
+.bthMainAut,
+.bthMain,
+.bthOutput, 
+.bthLog,
+.bth-save,
+.bth-reset,
+.bth-sign-in,
+.bthPlay{
+    font-size: 2em;
+    width: 4em;
+    border-radius: .5em;
+    outline: none;
+    cursor: pointer;
+    font-family: MyFont;
+}
+
+.bthPlay{
+    margin-top: 1em;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.login-reg, 
+.passw-reg, 
+.confirm-reg,
+.login-sign,
+.passw-sign{
+    width: 20rem;
+    margin-bottom: 1.2em;
+    font-size: 1.5em;
+    padding: .5em 0;
+    border-radius: 1em;
+    text-align: center;
+    outline: none;
+    
+}
+
+
+.div-button{
+    width: 20em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-reg,
+.form-sign{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.mainPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.root-element_massage{
+    background-color: #ff8c00;
+    padding: 1em;
+    border-radius: 0.5em;
+    position: absolute;
+    transform: translate(0, -100%);
+}
+
+.fieldGame{
+    height: 21em;
+    width: 21em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.square{
+    height: 7rem;
+    width: 7rem;
+    background-color: #00FF00;
+    border: 1px solid  #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+.player-move{
+    font-size: 2em;
+    color: #000;
+    background-color: #00FF00;
+    width: 21rem;
+    border: 1px solid #fff;
+    border-radius: .5em;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.bthReset,
+.bthQuit{
+    font-family: MyFont;
+    font-size: 2em;
+    width: 3em;
+    border-radius: .5em;
+    cursor: pointer;
+    outline: none;
+}
+
+.bthWrapperCentr{
+    display: flex;
+    width: 21em;
+    justify-content: space-around;
+    background-color: #00FF00;
+    border-radius: 1em;
+    padding: 1em 0;
+    border: 1px solid #fff;
+}
+
+.wrapperCentr{
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.userLeft,
+.userRight{
+    height: 21em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#00FF00;
+    border: 1px solid #fff;
+    border-radius: 1em;
+}
+
+.nameUserLeft,
+.nameUserRight,
+.counterUserLeft,
+.counterUserRight,
+.counterLeft,
+.counterRight{
+    font-size: 2em;
+}
+
+@media (max-width: 680px) {
+    html, body  {
+         font-size: 11px;
+    }
+    .mainPage{
+        font-size: 5em;
+    }
+    .bthMainAut,
+    .bthMain,
+    .bthOutput, 
+    .bthLog,
+    .bth-save,
+    .bth-reset,
+    .bth-sign-in,
+    .bthPlay,
+    .bthReset,
+    .bthQuit{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgBlock {
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .wrapper-button{
+        flex-direction: column;
+        height: 20%;
+        align-items: center;
+    }
+    .div-button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bth-reset{
+        margin-top: 1em;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    html, body  {
+         font-size: 7px;
+    }
+    .mainPage{
+        font-size: 7em;
+    }
+    
+    [type]{
+        font-size: 2em;
+    }
+    .bthReg{
+        font-size: 5em;
+    }
+    .bthMainAut,
+    .bthMain,
+    .bthOutput, 
+    .bthLog,
+    .bth-save,
+    .bth-reset,
+    .bth-sign-in,
+    .bthPlay,
+    .bthReset,
+    .bthQuit{
+        font-size: 5em;
+    }
+
+    .bthWrapperCentr{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+
+
+
+
+
